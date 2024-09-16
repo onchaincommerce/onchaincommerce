@@ -1,0 +1,77 @@
+.analyticsContainer {
+  padding: 20px;
+  color: #00f7ff;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.timeRangeToggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.timeRangeToggle button {
+  margin: 5px;
+  flex: 1;
+  min-width: 100px;
+  max-width: 150px;
+}
+
+.active {
+  background-color: rgba(0, 247, 255, 0.3);
+}
+
+.metricsContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.metric {
+  background-color: rgba(0, 15, 30, 0.8);
+  border: 1px solid rgba(0, 247, 255, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.metric h3 {
+  margin-bottom: 10px;
+}
+
+.metric p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.chartsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.chart {
+  background-color: rgba(0, 15, 30, 0.8);
+  border: 1px solid rgba(0, 247, 255, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.chart h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.error {
+  color: #ff4136;
+  text-align: center;
+}

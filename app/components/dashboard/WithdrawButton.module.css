@@ -1,0 +1,83 @@
+.withdrawContainer {
+    background-color: rgba(0, 15, 30, 0.8);
+    border: 1px solid rgba(0, 247, 255, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    color: #00f7ff;
+    font-family: 'Orbitron', sans-serif;
+    margin-top: 20px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.withdrawForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 247, 255, 0.3);
+    background-color: rgba(0, 15, 30, 0.9);
+    color: #00f7ff;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 10px;
+}
+
+.select option {
+    background-color: rgba(0, 15, 30, 0.9);
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 247, 255, 0.3);
+    background-color: rgba(0, 15, 30, 0.9);
+    color: #00f7ff;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.amountContainer {
+    display: flex;
+    gap: 5px;
+}
+
+.input {
+    flex-grow: 1;
+}
+
+.maxButton {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 247, 255, 0.3);
+    background-color: rgba(0, 247, 255, 0.1);
+    color: #00f7ff;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.maxButton:hover {
+    background-color: rgba(0, 247, 255, 0.2);
+}
+
+.withdrawButton {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.withdrawButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

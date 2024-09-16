@@ -1,0 +1,23 @@
+.enterContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .enterButton {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: 2px solid #00f7ff;
+    color: #00f7ff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .enterButton:hover {
+    background-color: rgba(0, 247, 255, 0.2);
+    box-shadow: 0 0 15px rgba(0, 247, 255, 0.5);
+  }

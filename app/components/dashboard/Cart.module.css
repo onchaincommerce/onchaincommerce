@@ -1,0 +1,164 @@
+.cartContainer {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+  }
+  
+  .newItemForm {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .newItemForm input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .itemList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .itemRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .itemRow input {
+    width: 60px;
+    padding: 4px;
+    text-align: center;
+  }
+  
+  .summary {
+    margin-top: 20px;
+  }
+  
+  .generateButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .generateButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .posContainer {
+    display: flex;
+    height: 100%;
+    background-color: #f0f0f0;
+  }
+  
+  .productCatalog {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+  }
+  
+  .newProductForm {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .newProductForm input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .newProductForm button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .productGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  
+  .productCard {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .productCard:hover {
+    background-color: #e9e9e9;
+  }
+  
+  .cartDetails {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cartList {
+    list-style-type: none;
+    padding: 0;
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+  
+  .cartItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cartItem input {
+    width: 60px;
+    padding: 4px;
+    text-align: center;
+  }
+  
+  .cartSummary {
+    margin-top: 20px;
+  }
+  
+  .totalAmount {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .chargeButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+  }
+  
+  .chargeButton:hover {
+    background-color: #218838;
+  }

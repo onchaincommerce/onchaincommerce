@@ -1,0 +1,208 @@
+.paymentHistory {
+    font-family: 'Orbitron', sans-serif;
+    color: #00f7ff;
+    padding: 1rem;
+    background-color: rgba(0, 15, 30, 0.9);
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+.filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.statusFilter,
+.searchInput {
+    padding: 0.5rem;
+    background-color: rgba(0, 247, 255, 0.1);
+    border: 1px solid #00f7ff;
+    color: #00f7ff;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.statusFilter {
+    min-width: 150px;
+}
+
+.searchInput {
+    flex-grow: 1;
+}
+
+.statusFilter:focus,
+.searchInput:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 247, 255, 0.5);
+}
+
+.paymentTable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: rgba(0, 15, 30, 0.8);
+    border: 1px solid rgba(0, 247, 255, 0.3);
+    margin-top: 1rem;
+}
+
+.paymentTable th,
+.paymentTable td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 247, 255, 0.3);
+    border-right: 1px solid rgba(0, 247, 255, 0.3);
+}
+
+.paymentTable th {
+    background-color: rgba(0, 247, 255, 0.1);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.paymentTable tr:hover {
+    background-color: rgba(0, 247, 255, 0.05);
+}
+
+.error {
+    color: #ff4444;
+    margin-top: 1rem;
+}
+
+.noResults {
+    text-align: center;
+    margin-top: 2rem;
+    font-style: italic;
+}
+
+.txLink {
+    color: #00f7ff;
+    text-decoration: none;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.txLink:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+.refundCell {
+    text-align: center;
+}
+
+.refundButton {
+    background-color: rgba(0, 247, 255, 0.2);
+    border: 1px solid rgba(0, 247, 255, 0.5);
+    color: #00f7ff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.refundButton:hover {
+    background-color: rgba(0, 247, 255, 0.3);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.paginationButton {
+    background-color: rgba(0, 247, 255, 0.2);
+    border: 1px solid rgba(0, 247, 255, 0.5);
+    color: #00f7ff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.paginationButton:hover:not(:disabled) {
+    background-color: rgba(0, 247, 255, 0.3);
+}
+
+.paginationButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pageInfo {
+    color: #00f7ff;
+}
+
+@media (max-width: 768px) {
+    .filters {
+        flex-direction: column;
+    }
+    
+    .statusFilter,
+    .searchInput {
+        width: 100%;
+    }
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background-color: #001f3f;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    color: #00f7ff;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.inputContainer {
+    margin-bottom: 1rem;
+}
+
+.refundInput {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: rgba(0, 247, 255, 0.1);
+    border: 1px solid #00f7ff;
+    color: #00f7ff;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.modalButtonContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.closeButton,
+.confirmButton {
+    padding: 0.5rem 1rem;
+}
+
+.statusMessage {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
